@@ -1,0 +1,48 @@
+/*Logo font*/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/*Web Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;800;900&family=Satisfy&display=swap');
+
+:root{
+    --pink--: #FF00FB;
+    --white: #FFF;
+    --black--: #171717;
+    --gray--: #777;
+    --orange--: #FF8221;
+}
+
+/*Global Scopes*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+section,.introduction{
+    height: 100vh;
+}
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+header h1,header button{cursor: pointer;}
+
+/*header*/
+header h1{ /*Logo*/
+    margin-right: auto;
+    font-family: 'Satisfy',sans-serif;
+    margin-left: 30px;
+}
+header h1 span{color: #FF00FB;}
+/*Navs*/
+nav button{
+    margin: 0px 30px 0px;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+}
+
