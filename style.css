@@ -10,6 +10,7 @@
     --black--: #171717;
     --gray--: #777;
     --orange--: #FF8221;
+    --border-size: 2px;
 }
 
 /*Global Scopes*/
@@ -19,6 +20,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 section,.introduction{
     height: 100vh;
@@ -40,9 +42,28 @@ header h1{ /*Logo*/
 }
 header h1 span{color: #FF00FB;}
 /*Navs*/
-nav button{
+nav button {
     margin: 0px 30px 0px;
     border: none;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
+nav button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust the underline height as needed */
+    background-color: #FF00FB; /* Change the color as needed */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  nav button:hover::before {
+    width: 100%;
+  }
+  
+
 
