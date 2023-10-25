@@ -1,25 +1,27 @@
+
 //Function to click navbar to scroll
 const clickToScroll = () =>{
  //buttons
-const buttons = document.querySelectorAll('button');
+const navLinks = document.querySelectorAll('nav ul li');
  //sections
     const sections = document.querySelectorAll('section');
  //navButtons
-    const homeBtn = buttons[0];
-    const aboutBtn = buttons[1];
-    const menuBtn = buttons[2];
-    const contactBtn = buttons[3];
+  const home = navLinks[0];
+  const about = navLinks[1];
+  const menu = navLinks[2];
+  const contact = navLinks[3];
 
  //Function to scroll to view sections
     const clickScroll = (sec) => {sec.scrollIntoView({behaviour: 'smooth'})}
-    homeBtn.addEventListener('click',() => {clickScroll(sections[0])})
-    aboutBtn.addEventListener('click',() => {clickScroll(sections[1])})
-    menuBtn.addEventListener('click',() => {clickScroll(sections[2])})
-    contactBtn.addEventListener('click',() => {clickScroll(sections[3])})
-
+    
+    about.addEventListener('click',() => {clickScroll(sections[0])})
+    menu.addEventListener('click',() => {clickScroll(sections[1])})
+    contact.addEventListener('click',() => {clickScroll(sections[2])})
 }
 clickToScroll();
-//function to remove the hover when clicked
+
+
+
 
 
 
